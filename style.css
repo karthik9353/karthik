@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+     
+    background-image:url("p.jpg");
+    background-repeat:repeat;
+    background-size: 80px;
+}
+h1{
+    width: 300px;
+    height:36px;
+    background-color: #b8ccbd;
+    border: 2px solid #790973;
+ 
+}
+
+#game {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-gap: 2px;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #d3ee28;
+    border: 2px solid #0b0b0b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.cell.revealed {
+    background-color: #cb3f3f;
+    cursor: default;
+}
+
+.cell.mine {
+    background-color: #d3ee28;
+}
+
+.cell.flag {
+    background-color: rgb(225, 225, 43);
+}
